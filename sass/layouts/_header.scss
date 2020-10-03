@@ -1,0 +1,53 @@
+header {
+    width:100%;   
+    text-align: center;
+    position: relative;
+
+    .fa-arrow-left {
+        font-size: 5vw;
+        position: absolute;
+        top: 42%;
+        left:5%;
+    }
+
+    img {
+        height:80vw;
+        width:100vw;
+        object-fit: cover;
+    }
+
+    h1 {
+        height: 17vw;
+        line-height: 19vw;
+        font-family: "Shrikhand";
+        font-size: 8vw;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.08);   
+        position: relative;  
+        z-index:100;  
+    }
+    
+    span {
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+    
+    .location-info {
+        height: 14vw;
+        opacity: .8;
+        font-weight: 500;
+        font-size: 4.6vw;
+        background-color: rgb(232, 232, 232);
+        line-height: 15vw;
+    
+        .fas {
+            margin-right: 2vw;
+        }
+    
+        .location {
+            margin-right: 4vw;
+        }
+}
+
+
+}

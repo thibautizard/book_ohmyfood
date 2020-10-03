@@ -1,0 +1,30 @@
+.presentation {
+    background-color: rgb(248, 248, 248);
+    height: 77vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 10vw;
+    
+
+    h3 {
+        font-size: 6.5vw;
+        margin-bottom: 3vw;
+        padding: 0vw 18vw;
+    }
+    
+    p {
+
+        font-size: 4.7vw;
+        color: rgb(114, 114, 114);
+        font-weight: 300;
+        margin-bottom: 7vw;
+        padding: 0vw 4vw;
+        
+    }
+
+    
+}
+

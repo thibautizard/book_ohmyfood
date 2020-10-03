@@ -1,0 +1,47 @@
+.loading-spinner {
+    position:fixed;
+    height:30vw;
+    width: 30vw;
+    border-radius: 30vw;
+    border-top: 5px solid  $purple;
+    border-right: 15px solid transparent;
+    z-index:999;
+    left:35vw;
+    top: 35vh;
+}
+
+.loading-spinner {
+    visibility: hidden;
+}
+
+@keyframes maskAll {
+    from {opacity: 0;}
+    to {opacity: 0;}
+}
+
+@keyframes loadingSpinner {
+    from{
+        transform:rotate(0); 
+        visibility: visible;
+    }
+    to{
+        transform:rotate(400deg); 
+        visibility: visible;
+    }
+}
+
+.restaurants {
+
+    header, main, footer {
+    animation: maskAll 1s;
+    }
+}
+
+body {
+    animation: sizeBody 1s;
+}
+
+.loading-spinner {
+    animation: loadingSpinner 1s linear;
+}
+

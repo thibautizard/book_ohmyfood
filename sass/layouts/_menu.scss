@@ -1,0 +1,47 @@
+.menu {
+
+    padding: 8vw 0 4.5vw 0vw;
+    border-radius: 10vw 10vw 0 0;
+    position: relative;
+    top: -15vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        width:90%;
+        margin: auto;
+        margin-bottom: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 6vw;
+        
+    }
+
+    h1 {
+        font-family: "Shrikhand";
+        font-size: 7vw;
+        font-weight: 400;
+    }
+
+    &--part {
+        width:90%;
+        margin: 7vw auto;
+
+        h2 {
+            font-size: 4vw;
+            font-weight: 300;
+        }
+
+        h2::after {            
+            content: "";
+            display: block;
+            background: $green;
+            margin-top: 1vw;
+            height:.7vw;
+            width:10vw;
+        }
+    }
+}
+

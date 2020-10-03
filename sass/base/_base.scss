@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Roboto";
+}
+
+
+
+a {
+    text-decoration: none;
+    color:inherit;
+
+    &:nth-child(1) .miniature--restaurants__image {background-image: url('../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg')}
+    &:nth-child(2) .miniature--restaurants__image {background-image: url('../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg')}
+    &:nth-child(3) .miniature--restaurants__image {background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg')}
+    &:nth-child(4) .miniature--restaurants__image {background-image: url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg')}
+}
+
+@keyframes extend {
+    from {height:0;}
+    to {height:60px;}
+  }

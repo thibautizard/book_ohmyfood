@@ -1,0 +1,66 @@
+.fonctionnement {
+
+    &--layer {
+        background-color: rgb(248, 248, 248);
+        border-radius: 6vw;
+        width:87vw;
+        height: 19.5vw;
+        box-shadow: 0px 5px 6px .3px rgba(0,0,0,0.1);
+        position:relative;
+        display: flex;
+        left:3vw;
+        margin: 6vw 0;
+
+        
+
+        .number {
+            position:absolute;
+            top:33%;
+            left:-4.2vw;
+            border-radius: 7vw;
+            width: 7vw;
+            height: 7vw;
+            text-align: center;
+            font-size: 4vw;
+            line-height: 7vw;
+            background-color: $purple;
+            color:white;
+        }
+
+        p {
+            align-self: center;
+            margin-left: 10vw;
+            font-size: 4.3vw;
+            font-weight: 500;
+
+            .fas {
+                margin-right: 6vw;
+                opacity: .5;
+                font-size: 5.5vw;
+                
+            }
+
+            .fa-mobile-alt {
+                font-size: 6vw;
+            }
+
+            .fa-list-ul {
+                font-size: 5vw;
+            }
+
+            .fa-store {
+                font-size: 5vw;
+            }
+
+         }
+
+         &:nth-child(3) {
+            background-color: #f4edfe;
+
+            .fas {
+                color: $purple;
+                opacity: 1;
+            }
+        }
+    }
+}

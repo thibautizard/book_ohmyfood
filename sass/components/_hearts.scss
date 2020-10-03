@@ -1,0 +1,34 @@
+.hearts {
+    position: relative;
+
+    .mask-1{
+        overflow: hidden;
+        position: absolute;                    
+        transition: all 1s ease;
+        height:0vw;
+        width:0vw;
+        top: -2.5vw;
+        left:-2.5vw;
+        border-radius: 9vw;
+    }
+    
+    &:hover {
+        .mask-1 {
+            height:12vw;
+            width:12vw;
+        }
+    }
+    
+    .heart {
+        width: 7vw;
+        cursor: pointer;                    
+    }
+
+    .heart-full {
+        position: relative;
+        top: 2.5vw;
+        left:2.5vw;
+    }
+    
+   
+}

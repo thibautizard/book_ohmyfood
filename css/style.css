@@ -1,0 +1,475 @@
+/*
+==============
+||  COLORS  ||
+==============
+                                                        */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(5vw);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+header .fa-arrow-left {
+  font-size: 5vw;
+  position: absolute;
+  top: 42%;
+  left: 5%;
+}
+header img {
+  height: 80vw;
+  width: 100vw;
+  object-fit: cover;
+}
+header h1 {
+  height: 17vw;
+  line-height: 19vw;
+  font-family: "Shrikhand";
+  font-size: 8vw;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 100;
+}
+header span {
+  font-family: inherit;
+  font-size: inherit;
+}
+header .location-info {
+  height: 14vw;
+  opacity: 0.8;
+  font-weight: 500;
+  font-size: 4.6vw;
+  background-color: #e8e8e8;
+  line-height: 15vw;
+}
+header .location-info .fas {
+  margin-right: 2vw;
+}
+header .location-info .location {
+  margin-right: 4vw;
+}
+
+.presentation {
+  background-color: #f8f8f8;
+  height: 77vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10vw;
+}
+.presentation h3 {
+  font-size: 6.5vw;
+  margin-bottom: 3vw;
+  padding: 0vw 18vw;
+}
+.presentation p {
+  font-size: 4.7vw;
+  color: #727272;
+  font-weight: 300;
+  margin-bottom: 7vw;
+  padding: 0vw 4vw;
+}
+
+.restaurants h2 {
+  padding-left: 5vw;
+  font-weight: 500;
+  margin-bottom: 7vw;
+  font-size: 6.7vw;
+}
+.restaurants#restaurants {
+  background-color: #f8f8f8;
+}
+
+.miniatures {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.layers {
+  padding-left: 5vw;
+}
+
+footer {
+  background-color: #353535;
+  height: 53vw;
+  color: white;
+  padding: 5.5vw 7vw;
+}
+footer h1 {
+  font-size: 4.75vw;
+  font-weight: 500;
+  font-family: "Shrikhand";
+  margin-bottom: 4vw;
+}
+footer p {
+  margin-bottom: 2vw;
+  font-weight: 500;
+  font-size: 4vw;
+}
+footer p .fas {
+  font-size: 3.5vw;
+  width: 5.5vw;
+}
+
+.menu {
+  padding: 8vw 0 4.5vw 0vw;
+  border-radius: 10vw 10vw 0 0;
+  position: relative;
+  top: -15vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.menu .title {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 6vw;
+}
+.menu h1 {
+  font-family: "Shrikhand";
+  font-size: 7vw;
+  font-weight: 400;
+}
+.menu--part {
+  width: 90%;
+  margin: 7vw auto;
+}
+.menu--part h2 {
+  font-size: 4vw;
+  font-weight: 300;
+}
+.menu--part h2::after {
+  content: "";
+  display: block;
+  background: #99E2D0;
+  margin-top: 1vw;
+  height: 0.7vw;
+  width: 10vw;
+}
+
+.fonctionnement--layer {
+  background-color: #f8f8f8;
+  border-radius: 6vw;
+  width: 87vw;
+  height: 19.5vw;
+  box-shadow: 0px 5px 6px 0.3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  left: 3vw;
+  margin: 6vw 0;
+}
+.fonctionnement--layer .number {
+  position: absolute;
+  top: 33%;
+  left: -4.2vw;
+  border-radius: 7vw;
+  width: 7vw;
+  height: 7vw;
+  text-align: center;
+  font-size: 4vw;
+  line-height: 7vw;
+  background-color: #9356DC;
+  color: white;
+}
+.fonctionnement--layer p {
+  align-self: center;
+  margin-left: 10vw;
+  font-size: 4.3vw;
+  font-weight: 500;
+}
+.fonctionnement--layer p .fas {
+  margin-right: 6vw;
+  opacity: 0.5;
+  font-size: 5.5vw;
+}
+.fonctionnement--layer p .fa-mobile-alt {
+  font-size: 6vw;
+}
+.fonctionnement--layer p .fa-list-ul {
+  font-size: 5vw;
+}
+.fonctionnement--layer p .fa-store {
+  font-size: 5vw;
+}
+.fonctionnement--layer:nth-child(3) {
+  background-color: #f4edfe;
+}
+.fonctionnement--layer:nth-child(3) .fas {
+  color: #9356DC;
+  opacity: 1;
+}
+
+.menu--part > *:nth-child(1) {
+  animation: fadeInUp 2.25s ease;
+  animation-fill-mode: forwards;
+}
+.menu--part > *:nth-child(2) {
+  animation: fadeInUp 1.5s ease;
+  animation-fill-mode: forwards;
+}
+.menu--part > *:nth-child(3) {
+  animation: fadeInUp 1.5s 0.25s ease;
+  animation-fill-mode: forwards;
+}
+.menu--part > *:nth-child(4) {
+  animation: fadeInUp 1.5s 0.5s ease;
+  animation-fill-mode: forwards;
+}
+.menu--part > *:nth-child(5) {
+  animation: fadeInUp 1.5s 0.75s ease;
+  animation-fill-mode: forwards;
+}
+.menu--part .layer {
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  min-height: 18.2vw;
+  width: 100%;
+  display: flex;
+  border-radius: 3vw;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 4vw 0;
+  box-shadow: 0 0 5vw 0.3vw rgba(0, 0, 0, 0.1);
+}
+.menu--part .layer--plat {
+  width: 83%;
+  border-radius: 2.2vw;
+  padding: 3vw 0vw 3vw 3vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu--part .layer--plat h3 {
+  font-size: 4.6vw;
+  margin-bottom: 1vw;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu--part .layer--plat p {
+  opacity: 0.6;
+  font-weight: 400;
+  font-size: 3.9vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu--part .layer--checkbox {
+  transition: all 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  min-width: 0;
+  max-width: 0;
+}
+.menu--part .layer--checkbox .fas {
+  color: white;
+  font-size: 5.5vw;
+  transition: all 1s ease;
+  transform: rotate(90deg);
+  visibility: hidden;
+}
+.menu--part .layer:hover .layer--checkbox {
+  min-width: 15vw;
+  max-width: 15vw;
+}
+.menu--part .layer:hover .layer--checkbox .fas {
+  visibility: visible;
+  transform: rotate(360deg);
+}
+.menu--part .layer > p {
+  font-size: 4vw;
+  font-weight: 500;
+  padding: 10.2vw 6.5vw 0 2vw;
+  z-index: 2;
+}
+
+.miniature {
+  width: 90vw;
+  height: 65vw;
+  background-color: white;
+  box-shadow: 0px 5px 6px 0.3px rgba(0, 0, 0, 0.1);
+  border-radius: 4vw;
+  margin-bottom: 5vw;
+}
+.miniature--restaurants {
+  position: relative;
+}
+.miniature--restaurants__image {
+  height: 45vw;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 4vw;
+  border-top-right-radius: 4vw;
+}
+.miniature--restaurants__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vw;
+  padding-left: 4vw;
+  padding-right: 6vw;
+}
+.miniature--restaurants__description p:first-child {
+  font-size: 4.65vw;
+  margin-bottom: 0.5vw;
+}
+.miniature--restaurants__description p:nth-child(2) {
+  font-size: 4.2vw;
+  opacity: 0.7;
+  font-weight: 300;
+}
+.miniature--restaurants .marker-new {
+  position: absolute;
+  top: 5%;
+  left: 73%;
+  font-size: 3.6vw;
+  font-weight: 500;
+  color: #4a8573;
+  background-color: #99E2D0;
+  padding: 1.25vw 3.4vw;
+  border-radius: 0.5vw;
+}
+
+button {
+  border: none;
+  background: linear-gradient(170deg, #FF79DA 1%, #9356DC);
+  width: 58vw;
+  height: 13vw;
+  border-radius: 10vw;
+  color: white;
+  font-size: 4.3vw;
+  align-self: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: all ease 0.3s;
+  opacity: 0.85;
+}
+button:hover {
+  opacity: 1;
+  box-shadow: 0 8px 11px 1px rgba(0, 0, 0, 0.6);
+  transform: translateY(-1.5vw);
+}
+
+.hearts {
+  position: relative;
+}
+.hearts .mask-1 {
+  overflow: hidden;
+  position: absolute;
+  transition: all 1s ease;
+  height: 0vw;
+  width: 0vw;
+  top: -2.5vw;
+  left: -2.5vw;
+  border-radius: 9vw;
+}
+.hearts:hover .mask-1 {
+  height: 12vw;
+  width: 12vw;
+}
+.hearts .heart {
+  width: 7vw;
+  cursor: pointer;
+}
+.hearts .heart-full {
+  position: relative;
+  top: 2.5vw;
+  left: 2.5vw;
+}
+
+.loading-spinner {
+  position: fixed;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 30vw;
+  border-top: 5px solid #9356DC;
+  border-right: 15px solid transparent;
+  z-index: 999;
+  left: 35vw;
+  top: 35vh;
+}
+
+.loading-spinner {
+  visibility: hidden;
+}
+
+@keyframes maskAll {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes loadingSpinner {
+  from {
+    transform: rotate(0);
+    visibility: visible;
+  }
+  to {
+    transform: rotate(400deg);
+    visibility: visible;
+  }
+}
+.restaurants header, .restaurants main, .restaurants footer {
+  animation: maskAll 1s;
+}
+
+body {
+  animation: sizeBody 1s;
+}
+
+.loading-spinner {
+  animation: loadingSpinner 1s linear;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:nth-child(1) .miniature--restaurants__image {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+a:nth-child(2) .miniature--restaurants__image {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+a:nth-child(3) .miniature--restaurants__image {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+a:nth-child(4) .miniature--restaurants__image {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+@keyframes extend {
+  from {
+    height: 0;
+  }
+  to {
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
