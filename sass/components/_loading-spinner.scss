@@ -8,27 +8,23 @@
     z-index:999;
     left:35vw;
     top: 35vh;
-}
 
-.loading-spinner {
-    visibility: hidden;
-}
-
-@keyframes maskAll {
-    from {opacity: 0;}
-    to {opacity: 0;}
-}
-
-@keyframes loadingSpinner {
-    from{
-        transform:rotate(0); 
-        visibility: visible;
+    @include tablette-only {
+        border-top: 2vw solid  $purple;
+        border-right: 3vw solid transparent;
+        left:38vw;
     }
-    to{
-        transform:rotate(400deg); 
-        visibility: visible;
+
+    @include desktop-only {
+        border-top: 1vw solid  $purple;
+        border-right: 1.5vw solid transparent;
+        height:15vw;
+        width: 15vw;
+        left:43vw;
     }
 }
+
+
 
 .restaurants {
 
@@ -43,5 +39,6 @@ body {
 
 .loading-spinner {
     animation: loadingSpinner 1s linear;
+    animation-fill-mode: both;
 }
 

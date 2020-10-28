@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link href="./css/style.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/d878bdba34.js" crossorigin="anonymous" async></script>
@@ -12,15 +11,18 @@
 
 <body class="restaurants">
     
-    <div class="loading-spinner"> 
-        <p>  </p> 
-    </div>
+    <div class="loading-spinner"> </div>
 
     <!-- HEADER -->
     <header>
         
         <h1 class="title">ohmyfood</h1>
-        <div class="location-info"> <i class="fas fa-map-marker-alt"></i> <span class="location">Paris, Belleville </span></div>
+        
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i> 
+            <div class="location--text"> Paris, Belleville </div>
+        </div>
+        
         <div class="presentation">
             <h3> Réservez le menu qui vous convient </h3>
             <p> Découvrez des restaurants d'exception, sélectionnés 
@@ -59,7 +61,7 @@
 
             <div class="miniatures miniatures--restaurants">
 
-                <a href="menus/la_palette_du_gout.html" class="miniature miniature--restaurants">
+                <a href="menus/la_palette_du_gout.html" class="miniature miniature--restaurants" data-publication="Nouveau">
                     <div class="miniature__image miniature--restaurants__image"> </div>
 
                     <div class="miniature__description miniature--restaurants__description">
@@ -78,12 +80,10 @@
 
                     </div> 
                     
-                    <div class="marker-new"> 
-                        <p> Nouveau </p>
-                    </div>
+                    
                 </a>
 
-                <a href="menus/la_note_enchantee.html" class="miniature miniature--restaurants">
+                <a href="menus/la_note_enchantee.html" class="miniature miniature--restaurants" data-publication="Nouveau">
                     <div class="miniature__image miniature--restaurants__image"> </div>
 
                     <div class="miniature__description miniature--restaurants__description">
@@ -100,12 +100,6 @@
                             <img class="heart heart-empty"src="images/icons/heart-empty.png"/>
                         </div>
                     </div> 
-                    
-                    <div class="marker-new"> 
-                        <p> Nouveau </p>
-                    </div>
-
-
                 </a>
 
                 <a href="menus/a_la_francaise.html" class="miniature miniature--restaurants">

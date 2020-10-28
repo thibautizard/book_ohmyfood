@@ -18,11 +18,34 @@ button {
 
     cursor:pointer;
     transition: all ease .3s ;
-    opacity: .85;
+    opacity: 1;
+
+    @include tablette-only {
+        width: 48vw;
+        height: 10vw;
+        border-radius: 7vw;
+        font-size: 3.5vw;
+    }
+
+    @include desktop-only {
+        width: 28vw;
+        height: 6vw;
+        border-radius: 3vw;
+        font-size: 2vw;
+        margin:auto;
+    }
 
     &:hover {
-        opacity: 1;
+        opacity: .85;
         box-shadow: 0 8px 11px 1px rgba(0,0,0,0.60);
         transform: translateY(-1.5vw);
+
+        @include tablette-only {
+            transform: translateY(-1vw);
+        }
+    
+        @include desktop-only {
+            transform: translateY(-.5vw);
+        }
     }
 }

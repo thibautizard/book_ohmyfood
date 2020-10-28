@@ -1,0 +1,51 @@
+header {
+
+    .title {
+        box-shadow: none;
+        
+    }
+
+    .fa-arrow-left {
+        font-size: 5vw;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        display: block;
+
+        @include tablette-only {
+            font-size: 3.5vw;
+        }
+
+        @include desktop-only {
+            font-size: 3vw;
+        }
+
+        &:hover::after {
+            content:"";
+            width:190%;
+            height:160%;
+            border-radius: 50%;
+            background:lightgray;
+            opacity: .3;
+            position: absolute;
+            left: -48%;
+            top:-30%;
+            z-index:-1;
+            
+        }
+    }
+
+    img {
+        height:80vw;
+        width: 100%;
+        object-fit: cover;
+
+       
+
+        @include tablette-only {
+            height:35vw;
+            object-fit: cover;  
+        }
+    }
+    
+}

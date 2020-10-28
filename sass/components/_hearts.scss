@@ -1,34 +1,113 @@
 .hearts {
     position: relative;
+    z-index:2;
+
+   
+    
+
 
     .mask-1{
         overflow: hidden;
         position: absolute;                    
-        transition: all 1s ease;
+        transition: all .5s ease-in;
         height:0vw;
         width:0vw;
         top: -2.5vw;
         left:-2.5vw;
         border-radius: 9vw;
+
+        @include tablette-only {
+            top: -1.25vw;
+            left:-1.25vw;
+            border-radius: 4.5vw;
+        }
+
+        @include desktop-only {
+          
+        }
+      
     }
     
     &:hover {
         .mask-1 {
             height:12vw;
             width:12vw;
+
+            @include tablette-only {
+                height:6vw;
+                width:6vw;
+            }
+
+        
         }
     }
     
     .heart {
         width: 7vw;
-        cursor: pointer;                    
+        cursor: pointer; 
+        
+        @include tablette-only {
+            width:3.5vw;
+        }
+
+        @include desktop-only {
+            width:2.5vw;
+        }
+
+        
+
+       
     }
 
     .heart-full {
         position: relative;
         top: 2.5vw;
         left:2.5vw;
+
+        @include tablette-only {
+            top: 1.25vw;
+            left:1.25vw;
+        }
+       
     }
     
+   
+}
+
+.title .hearts {
+    
+    @include desktop-only {
+        width:4vw;
+        top: -6vw;
+        left:16vw;
+        border-radius: 4.5vw;
+        width:4vw;
+        height:6vw;
+        
+
+        &::after {
+            content:"";
+            display: block;
+            position:relative;
+            top:-5.9vw;
+            left:-1.6vw;
+            width: 7vw;
+            height: 7vw;
+            border-radius: 6vw;
+            box-shadow: 0 0 2vw rgba(0,0,0, .2);
+            background-color: white;
+            z-index:-1;
+        }
+    .heart {
+        @include tablette-only {
+            width:4.7vw;
+        }  
+
+        @include desktop-only {
+            width:3.8vw;
+        }  
+
+        }
+    }
    
 }

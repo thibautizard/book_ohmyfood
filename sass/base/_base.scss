@@ -5,6 +5,23 @@
     font-family: "Roboto";
 }
 
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid green;
+}
+
+.restaurant {
+
+    main {
+        @include desktop-only {
+            height: 35vw !important;
+        }
+    }
+}
+
+
 
 
 a {
@@ -16,8 +33,3 @@ a {
     &:nth-child(3) .miniature--restaurants__image {background-image: url('../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg')}
     &:nth-child(4) .miniature--restaurants__image {background-image: url('../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg')}
 }
-
-@keyframes extend {
-    from {height:0;}
-    to {height:60px;}
-  }

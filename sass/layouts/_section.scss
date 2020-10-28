@@ -1,3 +1,61 @@
+section {
+    @include desktop-only {
+        margin: 3vw 0;
+
+        &#restaurants {
+            margin-bottom: 3vw;
+        }
+    }
+
+    
+}
+
+#restaurants {
+
+    @include desktop-only {
+        
+        &::before {
+            content:"\f053";
+            box-sizing: border-box;
+            position: relative;
+            font-size: 2vw;
+            font-family: FontAwesome;
+            line-height: 4vw;
+            display: block;
+            color:white;
+            padding-left: 1.2vw;
+            width: 4vw;
+            height: 4vw;
+            border-radius: 4vw;
+            left:.65vw;
+            top:21vw;
+            z-index: 1;
+            background-image: linear-gradient(to top left, $purple, $pink);
+    
+        }
+    
+        &::after {
+            content:"\f054";
+            box-sizing: border-box;
+            position: absolute;
+            font-size: 2vw;
+            font-family: FontAwesome;
+            line-height: 4vw;
+            display: block;
+            color:white;
+            padding-left: 1.5vw;
+            width: 4vw;
+            height: 4vw;
+            border-radius: 4vw;
+            right:.53vw;
+            top:97.14vw;
+            z-index: 1;
+            background-image: linear-gradient(to top left, $purple, $pink);
+        }
+    }
+
+}
+
 .restaurants {
 
     h2 {
@@ -5,6 +63,18 @@
         font-weight: 500;
         margin-bottom: 7vw;
         font-size: 6.7vw;
+        
+        @include tablette-only {  
+            padding-left: 5vw;
+            margin-bottom: 4vw;
+            font-size: 4.5vw;
+        }
+
+        @include desktop-only {  
+            padding-left: 5vw;
+            margin-bottom: 3vw;
+            font-size: 3.5vw;
+        }
     }
 
     &#restaurants {

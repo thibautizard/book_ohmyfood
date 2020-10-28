@@ -1,16 +1,15 @@
+/* UTILS */
+
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/fonts";
+@import "./utils/functions";
 
-@import "./layouts/header";
-@import "./layouts/presentation";
-@import "./layouts/section";
-@import "./layouts/miniatures";
-@import "./layouts/layers";
-@import "./layouts/footer";
-@import "./layouts/menu";
+/* BASE */
 
-@import "./pages/accueil";
-@import "./pages/menu";
+@import "./base/base";
+
+/* COMPONENTS */
 
 @import "./components/layer__accueil";
 @import "./components/layer__menu";
@@ -19,5 +18,18 @@
 @import "./components/hearts";
 @import "./components/loading-spinner";
 
-@import "./base/base";
+/* LAYOUTS */
+
+@import "./layouts/header";
+@import "./layouts/presentation";
+@import "./layouts/section";
+@import "./layouts/miniatures";
+@import "./layouts/footer";
+@import "./layouts/menu";
+
+/* PAGES */
+
+@import "./pages/menu";
+
+
 

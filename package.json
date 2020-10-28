@@ -1,0 +1,29 @@
+{
+  "name": "thibautizard_3_30092020",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibautizard/ThibautIzard_3_30092020.git"
+  },
+  
+  "author": "Thibaut Izard",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/thibautizard/ThibautIzard_3_30092020/issues"
+  },
+  "homepage": "https://github.com/thibautizard/ThibautIzard_3_30092020#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0"
+  }
+}

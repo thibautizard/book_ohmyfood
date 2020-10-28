@@ -1,9 +1,45 @@
+// RESPONSIVE
+
+@mixin tablette-only {
+    @media screen and (min-width: map-get($breakpoints, tablette)){
+        @content
+    }
+};
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content
+    }
+};
+
+
+
+
+// ANIMATIONS
+
 @keyframes fadeInUp {
     from {
         opacity:0; 
-        transform: translateY(5vw)}
+        transform: translateY(5vw)
+    }
     to {
         opacity:1;
-        visibility: visible;
+        transform: translateY(0);
     }
 }
+
+@keyframes maskAll {
+    from {opacity: 0;}
+    to {opacity: 0;}
+}
+
+@keyframes loadingSpinner {
+    from {
+        visibility: visible;
+    }
+    to {
+        transform:rotate(400deg); 
+        visibility: hidden;
+    }
+}
+
